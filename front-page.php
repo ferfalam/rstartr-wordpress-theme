@@ -5,6 +5,39 @@
  */
 
 get_header('front-page');
+
+$ways = [
+    [
+        "subtitle" => "Suivez vos cours à votre rythme",
+        "description" => "Notre plateforme elearning propose plusieurs supports pédagogiques afin de s’adapter à votre méthode d’apprentissage."
+    ],
+    [
+        "subtitle" => "Des exercices concrets à réaliser",
+        "description" => "Savoir c’est bien. Faire c’est mieux ! Nous développons des exercices pratiques pour appliquer la théorie et la retenir enfin."
+    ],
+    [
+        "subtitle" => "Passez à l’apprentissage hybride",
+        "description" => "En alternant elearning et cours lives avec nos experts, vous n’êtes plus seuls devant ce beau challenge qu’est la reconversion."
+    ]
+    ];
+
+$reasons = [
+    [
+        "subtitle" => "Formations d'avenir",
+        "description" => "Les principes enseignées sont tirés des nouvelles méthodes de travail et de consommation. Vous ne trouverez aucune formation comme les nôtres ailleurs !",
+        "img" => get_stylesheet_directory_uri() . '/assets/images/icon1.png'
+    ],
+    [
+        "subtitle" => "Simple, clair, efficace",
+        "description" => "Notre plateforme pédagogique est le meilleur bureau virtuel pour apprendre de nouvelles choses et développer vos compétences transversales.",
+        "img" => get_stylesheet_directory_uri() . '/assets/images/icon2.png'
+    ],
+    [
+        "subtitle" => "Seul, mais ensemble !",
+        "description" => "Nous combinons la praticité de l’autonomie du elearning avec l’efficacité de l’apprentissage synchrone. Le tout 100% en ligne.",
+        "img" => get_stylesheet_directory_uri() . '/assets/images/icon3.png'
+    ]
+]
 ?>
 
 
@@ -32,18 +65,11 @@ get_header('front-page');
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/images/section2.png' ?>" alt="Prêt pour un changement de vie ?">
                 </div>
                 <div class="way-area">
-                    <div class="way">
-                        <span class="subtitle">Suivez vos cours à votre rythme</span>
-                        <p>Notre plateforme elearning propose plusieurs supports pédagogiques afin de s’adapter à votre méthode d’apprentissage.</p>
-                    </div>
-                    <div class="way">
-                        <span class="subtitle">Des exercices concrets à réaliser</span>
-                        <p>Savoir c’est bien. Faire c’est mieux ! Nous développons des exercices pratiques pour appliquer la théorie et la retenir enfin.</p>
-                    </div>
-                    <div class="way">
-                        <span class="subtitle">Passez à l’apprentissage hybride</span>
-                        <p>En alternant elearning et cours lives avec nos experts, vous n’êtes plus seuls devant ce beau challenge qu’est la reconversion.</p>
-                    </div>
+                    <?php
+                        foreach ($ways as $way) {
+                            get_template_part("template-parts/bloc-way", null, $way);
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -56,29 +82,12 @@ get_header('front-page');
         <div class="show-on-scroll">
             <div class="container">
                 <h1>Une plateforme qui accompagne vos besoins</h1>
-
                 <div class="reason-area">
-                    <div class="reason">
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/icon1.png' ?>" alt="Formations d'avenir">
-                        <div class="content">
-                            <div class="subtitle">Formations d'avenir</div>
-                            <p class="description">Les principes enseignées sont tirés des nouvelles méthodes de travail et de consommation. Vous ne trouverez aucune formation comme les nôtres ailleurs !</p>
-                        </div>
-                    </div>
-                    <div class="reason">
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/icon2.png' ?>" alt="Simple, clair, efficace">
-                        <div class="content">
-                            <div class="subtitle">Simple, clair, efficace</div>
-                            <p class="description">Notre plateforme pédagogique est le meilleur bureau virtuel pour apprendre de nouvelles choses et développer vos compétences transversales.</p>
-                        </div>
-                    </div>
-                    <div class="reason last">
-                        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/icon3.png' ?>" alt="Seul, mais ensemble !">
-                        <div class="content">
-                            <div class="subtitle">Seul, mais ensemble !</div>
-                            <p class="description">Nous combinons la praticité de l’autonomie du elearning avec l’efficacité de l’apprentissage synchrone. Le tout 100% en ligne.</p>
-                        </div>
-                    </div>
+                    <?php
+                        foreach ($reasons as $reason) {
+                            get_template_part("template-parts/bloc-reason", null, $reason);
+                        }
+                    ?>
                 </div>
             </div>
         </div>

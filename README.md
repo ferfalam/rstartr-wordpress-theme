@@ -9,4 +9,4 @@ Pour récupérer le thème :
  - `lancer wordpress et activer le thème`
 
 **Auteur :** Farid AMOUSSA  
-**Site web :** https://www.amoussa.farid
+**Site web :** https://www.amoussafarid.com
