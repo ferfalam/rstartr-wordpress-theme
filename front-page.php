@@ -24,7 +24,6 @@ get_header('front-page');
 
 
 <section id="how-section">
-    <!-- <img src="images/section2-back.png" class="back-img" alt="Prêt pour un changement de vie ?"> -->
     <div class="how show-on-scroll ">
         <div class="container">
             <h1>Prêt pour un changement de vie ?</h1>

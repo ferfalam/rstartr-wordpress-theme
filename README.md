@@ -8,5 +8,5 @@ Pour récupérer le thème :
  - `copier le dossier dans wp-content/themes/`
  - `lancer wordpress et activer le thème`
 
-**Auteur :** Farid AMOUSSA
+**Auteur :** Farid AMOUSSA  
 **Site web :** https://www.amoussa.farid
