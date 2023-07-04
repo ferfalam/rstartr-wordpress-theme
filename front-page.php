@@ -19,7 +19,7 @@ $ways = [
         "subtitle" => "Passez à l’apprentissage hybride",
         "description" => "En alternant elearning et cours lives avec nos experts, vous n’êtes plus seuls devant ce beau challenge qu’est la reconversion."
     ]
-    ];
+];
 
 $reasons = [
     [
@@ -61,14 +61,14 @@ $reasons = [
         <div class="container">
             <h1>Prêt pour un changement de vie ?</h1>
             <div class="row">
-                <div class="image-area">
+                <div class="image-area in-by-left">
                     <img src="<?= get_stylesheet_directory_uri() . '/assets/images/section2.png' ?>" alt="Prêt pour un changement de vie ?">
                 </div>
-                <div class="way-area">
+                <div class="way-area in-by-right">
                     <?php
-                        foreach ($ways as $way) {
-                            get_template_part("template-parts/bloc-way", null, $way);
-                        }
+                    foreach ($ways as $way) {
+                        get_template_part("template-parts/bloc-way", null, $way);
+                    }
                     ?>
                 </div>
             </div>
@@ -82,11 +82,11 @@ $reasons = [
         <div class="show-on-scroll">
             <div class="container">
                 <h1>Une plateforme qui accompagne vos besoins</h1>
-                <div class="reason-area">
+                <div class="reason-area in-by-light-speed">
                     <?php
-                        foreach ($reasons as $reason) {
-                            get_template_part("template-parts/bloc-reason", null, $reason);
-                        }
+                    foreach ($reasons as $reason) {
+                        get_template_part("template-parts/bloc-reason", null, $reason);
+                    }
                     ?>
                 </div>
             </div>
@@ -96,7 +96,7 @@ $reasons = [
 
 
 <section id="login">
-    <img src="<?= get_stylesheet_directory_uri().'/assets/images/login-back.png' ?>" alt="Rstartr, la plateforme d’apprentissage en ligne.">
+    <img src="<?= get_stylesheet_directory_uri() . '/assets/images/login-back.png' ?>" alt="Rstartr, la plateforme d’apprentissage en ligne.">
     <div class="login-area container show-on-scroll ">
         <form action="#" method="post">
             <div class="subtitle">Se connecter</div>
@@ -109,8 +109,8 @@ $reasons = [
                 <input type="password" class="password-input" placeholder="Mot de passe">
             </div>
             <div class="input-check-group">
-                <input type="checkbox" name="">
-                <label>Se souvenir de moi</label>
+                <input type="checkbox" name="" id="reminder">
+                <label for="reminder">Se souvenir de moi</label>
             </div>
             <div class="forget-password">
                 <a href="#">Mot de passe oublié ?</a>
