@@ -43,15 +43,18 @@ $reasons = [
 
 <section id="hero">
     <div class="container show-on-scroll">
-        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/section1.png' ?>" alt="Rstartr, la plateforme d’apprentissage en ligne.">
         <div class="presentation">
             <h1>Rstartr, la plateforme d’apprentissage en ligne.</h1>
+            <div class="text-center">
+                <img src="<?= get_stylesheet_directory_uri() . '/assets/images/section1.png' ?>" alt="Rstartr, la plateforme d’apprentissage en ligne.">
+            </div>
             <p>Devenez chef d’entreprise, développeur, community manager et bien d’autres métiers pour vous rendre plus indépendant.</p>
             <div class="call-to-action">
                 <a href="#" class="btn btn-primary">Se connecter</a>
                 <a href="#" class="btn">Découvrir</a>
             </div>
         </div>
+        <img src="<?= get_stylesheet_directory_uri() . '/assets/images/section1.png' ?>" alt="Rstartr, la plateforme d’apprentissage en ligne.">
     </div>
 </section>
 
